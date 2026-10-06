@@ -369,7 +369,7 @@ img {
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
-  gap: 52px;
+  gap: 44px;
   align-items: center;
 }
 
@@ -400,10 +400,10 @@ img {
 }
 
 .hero-name {
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(4.1rem, 5vw, 7.2rem);
   font-weight: 800;
   letter-spacing: -0.07em;
-  line-height: 0.9;
+  line-height: 0.88;
   margin-bottom: 18px;
 }
 
@@ -415,7 +415,7 @@ img {
 }
 
 .hero-role {
-  font-size: clamp(1.55rem, 2vw, 2.2rem);
+  font-size: clamp(1.7rem, 2vw, 2.15rem);
   font-weight: 600;
   letter-spacing: -0.05em;
   color: #b7d7ff;
@@ -423,10 +423,10 @@ img {
 }
 
 .hero-bio {
-  max-width: 700px;
+  max-width: 710px;
   font-size: 1.06rem;
   color: rgba(220, 236, 255, 0.82);
-  line-height: 1.72;
+  line-height: 1.62;
   margin-bottom: 28px;
 }
 
@@ -544,7 +544,7 @@ img {
 .hero-portrait-card {
   position: relative;
   z-index: 2;
-  width: min(100%, 530px);
+  width: min(100%, 520px);
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -659,15 +659,15 @@ img {
 .signature {
   position: absolute;
   right: -2%;
-  top: 70px;
+  top: 62px;
   z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-family: "Segoe Print", "Bradley Hand", cursive;
   font-style: italic;
-  font-size: clamp(2rem, 2vw, 2.8rem);
-  line-height: 0.8;
+  font-size: clamp(2.1rem, 2vw, 3rem);
+  line-height: 0.78;
   color: rgba(191, 219, 254, 0.9);
   transform: rotate(10deg);
   text-shadow: 0 0 16px rgba(59, 130, 246, 0.22);
