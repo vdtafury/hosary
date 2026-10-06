@@ -37,7 +37,7 @@
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
 
   /* Dimensions & Spacing */
-  --shell-max: 1040px;
+  --shell-max: 1280px;
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -368,13 +368,13 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.82fr);
-  gap: 36px;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 52px;
   align-items: center;
 }
 
 .hero-intro {
-  max-width: 720px;
+  max-width: 700px;
 }
 
 .status-indicator {
@@ -400,33 +400,33 @@ img {
 }
 
 .hero-name {
-  font-size: clamp(3rem, 5vw, 5.7rem);
+  font-size: clamp(3.3rem, 5vw, 6.1rem);
   font-weight: 800;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.07em;
   line-height: 0.96;
   margin-bottom: 18px;
 }
 
 .hero-name-accent {
-  background: linear-gradient(180deg, #7fc9ff 0%, #2f7df6 100%);
+  background: linear-gradient(180deg, #9ad9ff 0%, #2d7af6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .hero-role {
-  font-size: clamp(1.25rem, 2vw, 1.95rem);
+  font-size: clamp(1.35rem, 2vw, 2.05rem);
   font-weight: 600;
   letter-spacing: -0.04em;
   color: #b7d7ff;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .hero-bio {
-  max-width: 660px;
-  font-size: 1rem;
+  max-width: 700px;
+  font-size: 1.06rem;
   color: rgba(220, 236, 255, 0.82);
-  line-height: 1.7;
+  line-height: 1.72;
   margin-bottom: 28px;
 }
 
@@ -459,7 +459,7 @@ img {
 
 .hero-cards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   max-width: 100%;
 }
@@ -468,7 +468,7 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  min-height: 120px;
+  min-height: 114px;
   padding: 18px 20px;
   border-radius: 18px;
   border: 1px solid rgba(148, 163, 184, 0.2);
@@ -535,10 +535,10 @@ img {
 
 .visual-glow {
   position: absolute;
-  inset: 8% 8% 14% 8%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08) 26%, rgba(59, 130, 246, 0) 60%);
-  filter: blur(12px);
-  transform: scale(1.03);
+  inset: 8% 8% 14% 5%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.36), rgba(59, 130, 246, 0.1) 26%, rgba(59, 130, 246, 0) 68%);
+  filter: blur(14px);
+  transform: scale(1.04);
 }
 
 .hero-portrait-card {
@@ -563,23 +563,23 @@ img {
 .portrait-frame::before {
   content: "";
   position: absolute;
-  right: 8%;
-  bottom: 0;
-  width: 84%;
+  right: 6%;
+  bottom: 2%;
+  width: 86%;
   height: 84%;
-  border-radius: 210px 210px 28px 28px;
-  background: linear-gradient(180deg, rgba(36, 111, 235, 0.78), rgba(37, 99, 235, 0.08));
+  border-radius: 220px 220px 28px 28px;
+  background: linear-gradient(180deg, rgba(36, 111, 235, 0.9), rgba(37, 99, 235, 0.06));
   transform: skewX(-10deg);
-  filter: blur(8px);
+  filter: blur(10px);
   opacity: 0.95;
 }
 
 .portrait-frame::after {
   content: "";
   position: absolute;
-  inset: 8% 12% 9% 8%;
+  inset: 8% 10% 9% 8%;
   border-radius: 220px 220px 18px 18px;
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(148, 163, 184, 0.18);
   pointer-events: none;
 }
 
@@ -600,16 +600,17 @@ img {
   z-index: 3;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding: 12px 16px 12px 12px;
   border-radius: 16px;
   border: 1px solid rgba(96, 165, 250, 0.28);
   background: rgba(13, 21, 32, 0.72);
   box-shadow: 0 14px 30px rgba(3, 8, 17, 0.32);
   color: #ecf4ff;
-  font-size: 0.83rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.2;
+  letter-spacing: -0.02em;
   backdrop-filter: blur(8px);
   animation: heroFloat 7s ease-in-out infinite;
 }
@@ -624,18 +625,18 @@ img {
 }
 
 .skill-card-mid {
-  top: 278px;
-  left: 30px;
+  top: 282px;
+  left: 26px;
 }
 
 .skill-card-bottom {
-  right: 40px;
+  right: 28px;
   bottom: 110px;
 }
 
 .skill-card-right {
-  right: 8px;
-  bottom: 250px;
+  right: 4px;
+  bottom: 246px;
 }
 
 .skill-dot {
