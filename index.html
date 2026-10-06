@@ -3,435 +3,467 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Ahmed — Junior System Administrator</title>
-  <meta name="description" content="Portfolio of Mohamed Ahmed, Junior System Administrator & IT Support Specialist. Experience at Vodafone Egypt, certified in A+, CCNA, and MCSA." />
-  
-  <!-- Fonts -->
+  <title>Mohamed Ahmed — Junior System Administrator &amp; IT Support</title>
+  <meta name="description" content="Portfolio and technical CV of Mohamed Ahmed, Junior System Administrator and IT Support Specialist with enterprise experience at Vodafone Egypt." />
+  <meta name="author" content="Mohamed Ahmed" />
+  <link rel="canonical" href="https://hosary.vercel.app/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hosary.vercel.app/" />
+  <meta property="og:title" content="Mohamed Ahmed — Junior System Administrator &amp; IT Support" />
+  <meta property="og:description" content="Systems administration, network troubleshooting, and enterprise IT support. Experience at Vodafone Egypt." />
+  <meta property="og:image" content="https://hosary.vercel.app/assets/images/profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohamed Ahmed — Junior System Administrator" />
+  <meta name="twitter:description" content="Systems administration, network troubleshooting, and enterprise IT support." />
+  <meta name="twitter:image" content="https://hosary.vercel.app/assets/images/profile.jpg" />
+
+  <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Ahmed",
+    "jobTitle": "Junior System Administrator",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vodafone Egypt"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Taibah Academy"
+    },
+    "url": "https://hosary.vercel.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mohamed-ahmed-84751a298"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Background subtle aura -->
-  <div class="bg-glow" aria-hidden="true"></div>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- ================= NAVBAR ================= -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand">
-        <span class="brand-avatar">
-          <img src="profile.jpg" alt="Mohamed Ahmed" />
-        </span>
-        <div class="brand-info">
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a href="#top" class="brand" aria-label="Mohamed Ahmed - Home">
+        <img src="assets/images/profile.jpg" alt="Mohamed Ahmed portrait" class="brand-avatar" />
+        <div class="brand-text">
           <span class="brand-name">Mohamed Ahmed</span>
-          <span class="brand-role">Junior System Administrator</span>
+          <span class="brand-title">SysAdmin / IT Support</span>
         </div>
       </a>
 
-      <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav class="nav-links" id="mainNav" aria-label="Main Navigation">
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#certifications" class="nav-item">Certifications</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
 
-      <div class="nav-actions">
-        <button class="btn btn-secondary btn-sm" id="openCvBtn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-          View CV
+      <div class="nav-cta-group">
+        <button type="button" class="btn btn-secondary btn-sm" id="openCvBtn" aria-haspopup="dialog">
+          <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          Preview CV
         </button>
-        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
-        
-        <button class="burger" id="burger" aria-label="Toggle Navigation">
+        <a href="assets/images/cv-document.jpg" download="Mohamed_Ahmed_CV.jpg" class="btn btn-primary btn-sm">
+          Download CV
+        </a>
+        <button type="button" class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ================= HERO ================= -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="shell hero-shell">
         
-        <!-- Text Column -->
-        <div class="hero-content">
-          <div class="status-badge">
-            <span class="status-pulse"></span>
-            <span>Available for IT &amp; SysAdmin Roles</span>
+        <div class="hero-intro">
+          <div class="status-indicator">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for Full-time &amp; Junior IT Roles</span>
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="text-highlight">Mohamed Ahmed</span>
+          <h1 id="hero-heading" class="hero-name">
+            Mohamed Ahmed
           </h1>
-          <p class="hero-subtitle">
-            Junior System Administrator &amp; IT Support Specialist with hands-on enterprise experience from <strong>Vodafone Egypt</strong>.
+          <p class="hero-role">
+            Junior System Administrator &amp; IT Support Specialist
           </p>
 
-          <p class="hero-description">
-            Passionate about managing reliable systems, network infrastructure, and providing swift technical support. Strong technical foundation in CompTIA A+, Cisco CCNA, and Microsoft MCSA.
+          <p class="hero-bio">
+            Information Systems student with hands-on corporate experience at <strong>Vodafone Egypt</strong> (Systems Department). Formally trained across <strong>CompTIA A+</strong>, <strong>Cisco CCNA</strong>, and <strong>Microsoft MCSA</strong>. Focused on systems reliability, network troubleshooting, user workstation support, and standard operating procedures.
           </p>
 
-          <div class="hero-cta-group">
+          <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">
-              Contact Me
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              Get in Touch
+              <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <button class="btn btn-secondary" id="heroCvBtn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Resume / CV
+            <a href="https://wa.me/201026991001" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              WhatsApp Chat
+            </a>
+            <button type="button" class="btn btn-ghost copy-btn" data-copy="mohosary123@gmail.com" aria-label="Copy email address to clipboard">
+              <span>Copy Email</span>
             </button>
-            <a href="https://wa.me/201026991001" target="_blank" rel="noopener" class="btn btn-ghost" title="WhatsApp Chat">
-              <span>💬 WhatsApp</span>
-            </a>
           </div>
 
-          <div class="quick-metrics">
-            <div class="metric-item">
-              <span class="metric-val">1+</span>
-              <span class="metric-label">Year Experience</span>
+          <dl class="hero-meta-list">
+            <div class="hero-meta-item">
+              <dt>Location</dt>
+              <dd>Qalyub, Qalyubia, Egypt</dd>
             </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-val">4</span>
-              <span class="metric-label">Core Courses</span>
+            <div class="hero-meta-item">
+              <dt>Languages</dt>
+              <dd>Arabic (Native), English (Working)</dd>
             </div>
-            <div class="metric-divider"></div>
-            <div class="metric-item">
-              <span class="metric-val">3rd</span>
-              <span class="metric-label">Year IS Student</span>
+            <div class="hero-meta-item">
+              <dt>Degree Progress</dt>
+              <dd>3rd Year, Information Systems</dd>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <!-- Image Column -->
-        <div class="hero-visual">
-          <div class="profile-card">
-            <div class="photo-wrapper">
-              <img src="profile.jpg" alt="Mohamed Ahmed - Junior System Administrator" class="profile-img" />
-              <div class="photo-overlay"></div>
-            </div>
-            
-            <div class="profile-meta">
-              <div class="profile-info-row">
-                <span class="meta-label">Location</span>
-                <span class="meta-value">Qalyub, Qalyubia, Egypt</span>
-              </div>
-              <div class="profile-info-row">
-                <span class="meta-label">Current Studies</span>
-                <span class="meta-value">Taibah Academy (Information Systems)</span>
-              </div>
-              <div class="profile-info-row">
-                <span class="meta-label">Experience</span>
-                <span class="meta-value badge-exp">Vodafone Egypt</span>
-              </div>
-            </div>
+        <aside class="hero-portrait-card">
+          <div class="portrait-frame">
+            <img src="assets/images/profile.jpg" alt="Mohamed Ahmed in formal suit and tie" class="portrait-image" width="380" height="475" />
           </div>
-        </div>
+          <div class="portrait-caption">
+            <div class="caption-header">
+              <span class="caption-title">Mohamed Ahmed</span>
+              <span class="caption-tag">Open to Work</span>
+            </div>
+            <p class="caption-text">Vodafone Egypt Alumni &bull; Taibah Academy</p>
+          </div>
+        </aside>
 
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Profile</span>
-          <h2 class="section-title">About Me</h2>
-        </div>
+    <!-- SECTION: EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-heading">
+      <div class="shell">
+        <header class="section-header">
+          <p class="section-kicker">01 / Career History</p>
+          <h2 id="exp-heading" class="section-title">Work Experience</h2>
+        </header>
 
-        <div class="about-card">
-          <p class="about-lead">
-            I am an ambitious Information Systems student with hands-on experience gained directly in the systems department at <strong>Vodafone Egypt</strong>.
-          </p>
-          <p class="about-body">
-            My training combines rigorous theoretical knowledge with real-world application across CompTIA A+, Cisco CCNA, and Microsoft MCSA. I specialize in diagnosing system bottlenecks, resolving hardware and software issues, configuring networks, and maintaining high uptime for internal teams. I thrive in collaborative environments and am committed to continuous learning in dynamic IT ecosystems.
-          </p>
-
-          <div class="info-pills">
-            <div class="pill"><span>📍</span> Qalyub, Egypt</div>
-            <div class="pill"><span>🎓</span> B.Sc. in Information Systems (In progress)</div>
-            <div class="pill"><span>🗣</span> Arabic (Native) &amp; English (Very Good)</div>
-            <div class="pill"><span>💼</span> Open to full-time &amp; internship roles</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= EXPERIENCE ================= -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Career History</span>
-          <h2 class="section-title">Professional Experience</h2>
-        </div>
-
-        <div class="experience-timeline">
-          <div class="timeline-card">
-            <div class="card-top">
-              <div class="role-group">
-                <h3 class="role-title">Intern / Systems Department Employee</h3>
-                <span class="company-name">Vodafone Egypt</span>
-              </div>
-              <span class="date-badge">Systems &amp; Operations</span>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <header class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Intern / Systems Department Staff</h3>
+                  <p class="timeline-company">Vodafone Egypt</p>
+                </div>
+                <span class="timeline-period">Systems &amp; IT Operations</span>
+              </header>
+              <p class="timeline-desc">
+                Engaged directly within Vodafone Egypt's systems department to support enterprise operational workflows, resolve technical blockers for staff, and uphold system availability.
+              </p>
+              <ul class="task-list">
+                <li>Provided daily Tier-1 and Tier-2 technical support to internal employees across hardware, peripheral setups, and enterprise software configurations.</li>
+                <li>Diagnosed and resolved desktop operating system incidents (Windows client environments) under tight operational timelines.</li>
+                <li>Assisted in routine system operations, verified network connectivity, and maintained documentation for incident resolutions.</li>
+              </ul>
             </div>
-            <p class="role-summary">
-              Gained hands-on operational experience within the systems department of one of the largest telecommunications leaders in the region.
-            </p>
-            <ul class="bullet-list">
-              <li>Assisted in monitoring, maintaining, and supporting the company's internal systems and core infrastructure.</li>
-              <li>Provided first-line IT support to internal users, troubleshooting operating system, software, and hardware incidents.</li>
-              <li>Handled routine maintenance, configuration tasks, and ensured seamless workflow continuity across departments.</li>
-            </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Capabilities</span>
-          <h2 class="section-title">Technical &amp; Personal Skills</h2>
-        </div>
+    <!-- SECTION: TECHNICAL SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="shell">
+        <header class="section-header">
+          <p class="section-kicker">02 / Technical Domain</p>
+          <h2 id="skills-heading" class="section-title">Technical Competencies</h2>
+        </header>
 
         <div class="skills-grid">
-          <!-- Systems -->
-          <div class="skill-category">
-            <div class="cat-header">
-              <div class="cat-icon">🖥</div>
-              <h3>Systems &amp; OS</h3>
-            </div>
-            <div class="tags-group">
-              <span class="skill-tag">Windows OS (Client &amp; Pro)</span>
-              <span class="skill-tag">Windows Server Basics (MCSA)</span>
-              <span class="skill-tag">System Administration</span>
-              <span class="skill-tag">User Access &amp; Permissions</span>
-              <span class="skill-tag">System Maintenance</span>
-            </div>
+          
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg class="icon group-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              Systems &amp; OS Administration
+            </h3>
+            <ul class="competency-list">
+              <li>Windows Client (10/11) Enterprise Deployment</li>
+              <li>Windows Server Fundamentals (MCSA)</li>
+              <li>User Account Provisioning &amp; Permissions</li>
+              <li>System Maintenance, Backup &amp; Recovery</li>
+              <li>Workstation Performance Optimization</li>
+            </ul>
           </div>
 
-          <!-- Networking -->
-          <div class="skill-category">
-            <div class="cat-header">
-              <div class="cat-icon">🌐</div>
-              <h3>Networking</h3>
-            </div>
-            <div class="tags-group">
-              <span class="skill-tag">Cisco CCNA Fundamentals</span>
-              <span class="skill-tag">TCP/IP &amp; Subnetting</span>
-              <span class="skill-tag">DNS, DHCP, Gateway</span>
-              <span class="skill-tag">LAN / WAN Troubleshooting</span>
-              <span class="skill-tag">Network Diagnostics</span>
-            </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg class="icon group-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Networking &amp; Infrastructure
+            </h3>
+            <ul class="competency-list">
+              <li>Cisco CCNA Concepts &amp; Packet Tracer</li>
+              <li>TCP/IP, IPv4 Subnetting &amp; Addressing</li>
+              <li>DNS, DHCP, Default Gateways &amp; NAT</li>
+              <li>LAN/WLAN Connectivity &amp; Cable Testing</li>
+              <li>Network Troubleshooting &amp; Diagnostics</li>
+            </ul>
           </div>
 
-          <!-- IT Support -->
-          <div class="skill-category">
-            <div class="cat-header">
-              <div class="cat-icon">🛠</div>
-              <h3>IT Support &amp; Hardware</h3>
-            </div>
-            <div class="tags-group">
-              <span class="skill-tag">CompTIA A+ Principles</span>
-              <span class="skill-tag">Hardware Assembly &amp; Repair</span>
-              <span class="skill-tag">End-User Troubleshooting</span>
-              <span class="skill-tag">Peripherals &amp; Printers</span>
-              <span class="skill-tag">Microsoft Office Suite</span>
-            </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg class="icon group-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              Hardware &amp; IT Support Operations
+            </h3>
+            <ul class="competency-list">
+              <li>CompTIA A+ Hardware Standards</li>
+              <li>Component Assembly, Upgrades &amp; Diagnostics</li>
+              <li>Peripherals, Multi-Function Printers &amp; Scanners</li>
+              <li>Microsoft 365 &amp; Office Suite Troubleshooting</li>
+              <li>Remote Desktop Support &amp; Ticket Handling</li>
+            </ul>
           </div>
 
-          <!-- Soft Skills -->
-          <div class="skill-category">
-            <div class="cat-header">
-              <div class="cat-icon">💡</div>
-              <h3>Soft Skills &amp; Work Ethic</h3>
-            </div>
-            <div class="tags-group">
-              <span class="skill-tag">Technical Problem-Solving</span>
-              <span class="skill-tag">Working Under Pressure</span>
-              <span class="skill-tag">Teamwork &amp; Collaboration</span>
-              <span class="skill-tag">Clear Communication</span>
-              <span class="skill-tag">Fast Self-Learning</span>
-            </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg class="icon group-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Operational &amp; Professional Skills
+            </h3>
+            <ul class="competency-list">
+              <li>Structured Root-Cause Problem Solving</li>
+              <li>Calm Execution Under High Operational SLA</li>
+              <li>Clear Technical Communication with End Users</li>
+              <li>Team Collaboration &amp; Cross-department Support</li>
+              <li>Eagerness for Continuous Skill Acquisition</li>
+            </ul>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ================= CERTIFICATIONS & COURSES ================= -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Credentials</span>
-          <h2 class="section-title">Courses &amp; Certifications</h2>
-        </div>
+    <!-- SECTION: CERTIFICATIONS & COURSES -->
+    <section class="section" id="certifications" aria-labelledby="certs-heading">
+      <div class="shell">
+        <header class="section-header">
+          <p class="section-kicker">03 / Continuous Training</p>
+          <h2 id="certs-heading" class="section-title">Certifications &amp; Courses</h2>
+        </header>
 
-        <div class="certs-grid">
-          <div class="cert-card">
-            <div class="cert-badge">CompTIA</div>
-            <h4>CompTIA A+</h4>
-            <p>Comprehensive computer hardware, troubleshooting, operational procedures, and IT support essentials.</p>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-badge cisco">Cisco</div>
-            <h4>Cisco CCNA</h4>
-            <p>Routing, switching, network fundamentals, IP connectivity, and network security foundations.</p>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-badge msft">Microsoft</div>
-            <h4>Microsoft MCSA</h4>
-            <p>Windows Server administration, active directory management, networking services, and identity management.</p>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-badge win">Windows</div>
-            <h4>Windows IT Course</h4>
-            <p>Advanced operating system configurations, enterprise desktop deployment, and support best practices.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= EDUCATION ================= -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Academics</span>
-          <h2 class="section-title">Education</h2>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-details">
-            <div class="edu-header">
-              <h3>Bachelor's Degree in Information Systems</h3>
-              <span class="edu-badge">June 2022 – Present (3rd Year)</span>
+        <div class="certs-list">
+          
+          <div class="cert-item">
+            <div class="cert-meta">
+              <span class="cert-provider comptia">CompTIA</span>
+              <span class="cert-scope">Hardware &amp; IT Operations</span>
             </div>
-            <p class="edu-school">Taibah Academy</p>
-            <p class="edu-desc">
-              Currently in the 3rd year of undergraduate studies focusing on computer systems, database concepts, network architectures, and information technology management.
+            <h3 class="cert-name">CompTIA A+</h3>
+            <p class="cert-desc">
+              Comprehensive hardware diagnostics, motherboard and memory architecture, storage subsystems, networking protocols, OS installation, and foundational security hygiene.
             </p>
           </div>
+
+          <div class="cert-item">
+            <div class="cert-meta">
+              <span class="cert-provider cisco">Cisco</span>
+              <span class="cert-scope">Networking Architecture</span>
+            </div>
+            <h3 class="cert-name">Cisco CCNA</h3>
+            <p class="cert-desc">
+              Core network fundamentals, router and switch configuration, VLAN segmentation, routing protocols, IP services, and network access security.
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-meta">
+              <span class="cert-provider microsoft">Microsoft</span>
+              <span class="cert-scope">Server Administration</span>
+            </div>
+            <h3 class="cert-name">Microsoft MCSA</h3>
+            <p class="cert-desc">
+              Installation, storage, and compute with Windows Server, Active Directory Domain Services (AD DS), Group Policy, and core infrastructure management.
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-meta">
+              <span class="cert-provider windows">Windows IT</span>
+              <span class="cert-scope">Operating Systems</span>
+            </div>
+            <h3 class="cert-name">Windows IT Course</h3>
+            <p class="cert-desc">
+              Advanced administrative tools, Windows event viewer troubleshooting, registry management, services maintenance, and automated OS deployment.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Get in Touch</span>
-          <h2 class="section-title">Let's Connect</h2>
+    <!-- SECTION: EDUCATION -->
+    <section class="section" id="education" aria-labelledby="edu-heading">
+      <div class="shell">
+        <header class="section-header">
+          <p class="section-kicker">04 / Formal Academics</p>
+          <h2 id="edu-heading" class="section-title">Education</h2>
+        </header>
+
+        <div class="edu-card">
+          <div class="edu-top">
+            <div>
+              <h3 class="edu-degree">Bachelor's Degree in Information Systems</h3>
+              <p class="edu-institution">Taibah Academy</p>
+            </div>
+            <span class="edu-badge">June 2022 &ndash; Present (3rd Year)</span>
+          </div>
+          <p class="edu-summary">
+            Academic coursework covering computer systems architecture, database management systems (DBMS), data communications, algorithms, and business information processes.
+          </p>
         </div>
+      </div>
+    </section>
 
-        <div class="contact-grid">
+    <!-- SECTION: CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="shell">
+        <header class="section-header">
+          <p class="section-kicker">05 / Communication</p>
+          <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+        </header>
+
+        <div class="contact-layout">
           
-          <!-- Channels -->
-          <div class="contact-channels">
-            <a href="tel:+201026991001" class="channel-card">
-              <div class="channel-icon">📞</div>
-              <div class="channel-meta">
-                <span class="channel-label">Phone</span>
-                <span class="channel-value">(+20) 102 699 1001</span>
+          <div class="contact-cards">
+            
+            <div class="contact-box">
+              <span class="contact-label">Direct Phone</span>
+              <div class="contact-value-group">
+                <a href="tel:+201026991001" class="contact-link">(+20) 102 699 1001</a>
+                <button type="button" class="btn-text copy-btn" data-copy="+201026991001">Copy</button>
               </div>
-            </a>
+            </div>
 
-            <a href="https://wa.me/201026991001" target="_blank" rel="noopener" class="channel-card highlight-channel">
-              <div class="channel-icon">💬</div>
-              <div class="channel-meta">
-                <span class="channel-label">WhatsApp</span>
-                <span class="channel-value">Chat Directly</span>
+            <div class="contact-box highlight-box">
+              <span class="contact-label">WhatsApp</span>
+              <div class="contact-value-group">
+                <a href="https://wa.me/201026991001" target="_blank" rel="noopener noreferrer" class="contact-link link-accent">
+                  Chat on WhatsApp &rarr;
+                </a>
               </div>
-            </a>
+            </div>
 
-            <a href="mailto:mohosary123@gmail.com" class="channel-card">
-              <div class="channel-icon">✉️</div>
-              <div class="channel-meta">
-                <span class="channel-label">Email</span>
-                <span class="channel-value">mohosary123@gmail.com</span>
+            <div class="contact-box">
+              <span class="contact-label">Email Address</span>
+              <div class="contact-value-group">
+                <a href="mailto:mohosary123@gmail.com" class="contact-link">mohosary123@gmail.com</a>
+                <button type="button" class="btn-text copy-btn" data-copy="mohosary123@gmail.com">Copy</button>
               </div>
-            </a>
+            </div>
 
-            <a href="https://www.linkedin.com/in/mohamed-ahmed-84751a298" target="_blank" rel="noopener" class="channel-card">
-              <div class="channel-icon">💼</div>
-              <div class="channel-meta">
-                <span class="channel-label">LinkedIn</span>
-                <span class="channel-value">mohamed-ahmed-84751a298</span>
+            <div class="contact-box">
+              <span class="contact-label">LinkedIn Profile</span>
+              <div class="contact-value-group">
+                <a href="https://www.linkedin.com/in/mohamed-ahmed-84751a298" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  mohamed-ahmed-84751a298 &rarr;
+                </a>
               </div>
-            </a>
+            </div>
+
           </div>
 
-          <!-- Simple message box -->
-          <div class="contact-form-card">
-            <h3 class="form-title">Send a Quick Message</h3>
-            <form id="contactForm">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required />
+          <div class="contact-form-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-sub">Fill out the fields below to quickly draft an email to Mohamed.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <label for="userName">Your Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="userName" name="userName" required placeholder="e.g. Sarah Miller" autocomplete="name" />
+                <span class="field-error" id="nameError" role="alert"></span>
               </div>
-              <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+
+              <div class="form-row">
+                <label for="userEmail">Your Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="userEmail" name="userEmail" required placeholder="name@company.com" autocomplete="email" />
+                <span class="field-error" id="emailError" role="alert"></span>
               </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Hello Mohamed, I would like to discuss an opportunity..." required></textarea>
+
+              <div class="form-row">
+                <label for="userMessage">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="userMessage" name="userMessage" rows="4" required placeholder="Write your message or inquiry here..."></textarea>
+                <span class="field-error" id="messageError" role="alert"></span>
               </div>
+
               <button type="submit" class="btn btn-primary btn-block">
-                Send via Email
+                Send Message
               </button>
-              <p class="form-feedback" id="formFeedback"></p>
+              
+              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
             </form>
           </div>
 
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Mohamed Ahmed. Junior System Administrator.</p>
-      <div class="footer-links">
-        <a href="#hero">Back to Top ↑</a>
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <p>&copy; <span id="currentYear"></span> Mohamed Ahmed. Portfolio &amp; Resume.</p>
+      <div class="footer-actions">
+        <a href="#top" class="footer-link">Back to Top &uarr;</a>
       </div>
     </div>
   </footer>
 
   <!-- ================= CV MODAL ================= -->
-  <div class="modal-backdrop" id="cvModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <h3>Mohamed Ahmed — Resume</h3>
-          <span>Junior System Administrator</span>
+  <div class="modal-root" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle" hidden>
+    <div class="modal-scrim" id="modalScrim" tabindex="-1"></div>
+    <div class="modal-card">
+      <header class="modal-bar">
+        <div>
+          <h2 id="cvModalTitle" class="modal-heading">Mohamed Ahmed &mdash; CV Document</h2>
+          <p class="modal-sub">Junior System Administrator</p>
         </div>
-        <div class="modal-actions">
-          <a href="cv-document.jpg" download="Mohamed_Ahmed_CV.jpg" class="btn btn-primary btn-sm">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Download
+        <div class="modal-btns">
+          <a href="assets/images/cv-document.jpg" download="Mohamed_Ahmed_CV.jpg" class="btn btn-primary btn-sm">
+            Download File
           </a>
-          <button class="modal-close" id="closeCvBtn" aria-label="Close modal">×</button>
+          <button type="button" class="btn-icon" id="closeCvBtn" aria-label="Close CV preview modal">&times;</button>
         </div>
-      </div>
-      <div class="modal-body">
-        <img src="cv-document.jpg" alt="Mohamed Ahmed CV Document" class="cv-preview-img" />
+      </header>
+      <div class="modal-content">
+        <img src="assets/images/cv-document.jpg" alt="Official CV sheet for Mohamed Ahmed" class="cv-render" />
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastBox" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
